@@ -81,14 +81,15 @@ img {
     display: block;
 }
 
-header, main, footer {
+header, 
+main, 
+footer {
     width: 100%;
-    overflow-x: hidden;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
     .social-media-buttons {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
     }
 
