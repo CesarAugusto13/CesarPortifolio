@@ -30,9 +30,6 @@ footer {
 }
 
 .ondas {
-    bottom: 0; /* Alinha a imagem na parte inferior */
-    left: 0; /* Alinha a imagem à esquerda */
-    width: 100%; /* Cobrir toda a largura do rodapé */
-    height: auto; /* Ajustar a altura automaticamente */
-    z-index: 0; /* Coloca a imagem atrás dos itens do rodapé */
+    position: relative;
+    bottom: .1em;
 }
