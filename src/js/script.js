@@ -5,7 +5,7 @@ $(document).ready(function() {
         $(this).find('i').toggleClass('fa-x');
     });
 
-    // Selecionando elementos uma vez e armazenando-os em variáveis
+    // Selecionando elementos umaD vez e armazenando-os em variáveis
     const sections = $('section');
     const navItems = $('.nav-item');
 
