@@ -17,7 +17,7 @@
     color: #1e1e1e;
 }
 
-#cta .title spam {
+#cta .title span {
     color: #0084EF;
 }
 
@@ -36,9 +36,23 @@
     color: #1e1e1e;
 }
 
-#envie-duvida {
-    text-decoration: none;
-    color: #f1f1f1;
+.question-form {
+    background-color: #fff;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    align-items: ro;
+    flex-direction: column;
+    height: auto;
+    width: 70%;
+    padding: 2px;
 }
 
 #phone-button {

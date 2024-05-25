@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -28,7 +27,6 @@
             </i>
             <ul id="nav-list">
                 <li class="nav-item active">
-                    <!--Cada Hashtag direciona a um campo da página-->
                     <a href="#home">Início</a>
                 </li>
                 <li class="nav-item">
@@ -49,7 +47,6 @@
         <div id="mobile-menu">
             <ul id="mobile-nav-list">
                 <li class="nav-item">
-                    <!--Cada Hashtag direciona a um campo da página-->
                     <a href="#home">Início</a>
                 </li>
                 <li class="nav-item">
@@ -70,28 +67,30 @@
             <div class="shape"></div>
             <div id="cta">
                 <h1 class="title">
-                    <spam>Gabriel</spam> Sena
+                    <span>Gabriel</span> Sena
                 </h1>
                 <p id="description">Estudante de Análise e Desenvolvimento de Sistemas. Pretendo me especializar
                     como desenvolvedor backend, aprender mais sobre banco de dados e aplicar esses conhecimentos em
                     projetos desafiadores e inovadores.</p>
-
-                <div id="cta-buttons">
-                    <button href="#" class="btn-default" id="envie-duvida">Me mande uma dúvida!</button>
-
-                   <!-- <a href="https://wa.me/5511986411335" id="phone-button">
-                        <button class="btn-default">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </button>
-                        Fale comigo.
-                    </a> -->
+                    <!---->
+                <div class="question-form">
+                    <h2>Manda uma dúvida!</h2>
+                    <form class="form" action="/processa-formulario.php" method="post">
+                        <label for="nome"></label>
+                        <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                        <br>
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="E-mail" required>
+                        <br>
+                        <label for="mensagem"></label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" required></textarea>
+                        <br>
+                        <button class="btn-default" type="submit">Enviar</button>
+                    </form>
                 </div>
                 <div class="social-media-buttons">
                     <a href="https://github.com/gabriel-senan">
                         <i class="fa-brands fa-github"></i>
-                    </a>
-                    <!--<a href="https://www.instagram.com/gabriel.senan/">
-                        <i class="fa-brands fa-instagram"></i>-->
                     </a>
                     <a href="https://www.linkedin.com/in/gabrielsenan/">
                         <i class="fa-brands fa-linkedin"></i>
@@ -100,16 +99,12 @@
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
                 </div>
-
             </div>
 
             <div id="banner">
                 <img src="src/img/profile-pic (2).png" alt="Foto de perfil">
             </div>
-
         </section>
-
-
 
         <section id="projetos">
             <div class="titles">
@@ -170,31 +165,27 @@
                     <h3 class="proj-title">Verificador de cartão</h3>
                     <span class="proj-description">Descubra se seu cartão foi clonado.</span>
                     <h5>Andamento</h5>
-                    <progress class="proj-progress" value="03" max="100"></progress>
+                    <progress class="proj-progress" value="3" max="100"></progress>
                     <button class="btn-default btn-visitar">Visitar <i class="fa-solid fa-square-up-right"></i></button>
                 </div>
             </div>
         </section>
 
         <section id="sobre">
-
             <div class="titles">
                 <h2 class="section-title">Sobre</h2>
                 <h3 class="section-subtitle">Breve resumo</h3>
             </div>
 
             <div class="eu-geral">
-
                 <div class="sobre-img">
                     <img src="src/img/about-me-programming.svg" alt="Imagem developer">
                 </div>
-
                 <div class="sobre-description">
-                    <p id="description">Sou estudante de Análise e Desenvolvimento de Sistemas na Faculdade São
-                        Francisco de Assis, com previsão de conclusão em 2025. Pretendo me especializar como
-                        desenvolvedor backend, aprender mais sobre banco de dados e aplicar esses conhecimentos em
-                        projetos desafiadores e inovadores. Sou apaixonado por tecnologia e pelo seu potencial de
-                        transformar o mundo.</p>
+                    <p>Sou estudante de Análise e Desenvolvimento de Sistemas na Faculdade São Francisco de Assis,
+                        com previsão de conclusão em 2025. Pretendo me especializar como desenvolvedor backend,
+                        aprender mais sobre banco de dados e aplicar esses conhecimentos em projetos desafiadores e
+                        inovadores. Sou apaixonado por tecnologia e pelo seu potencial de transformar o mundo.</p>
 
                     <p>Fui assistente de pesquisa onde me desenvolvi bem com Análise de Dados e Power BI. No meu último
                         trabalho, eu auxiliei na criação de um banco de dados MySQL, fiz análise de mercado e elaborei
@@ -202,7 +193,6 @@
                         vendas. Me considero ágil em aprender e me adaptar a qualquer desafio!</p>
 
                     <p>Se eu pudesse me definir com 3 palavras seriam: otimista, esforçado e perseverante!</p>
-
                 </div>
             </div>
             <div class="btn-section-sobre">
@@ -210,19 +200,16 @@
             </div>
         </section>
     </main>
+
     <footer>
         <img src="src/img/wave.svg" class="ondas">
         <div class="footer-items">
             <span id="copyright">
-                &copy 2024 Senan.
+                &copy; 2024 Senan.
             </span>
-
             <div class="social-media-buttons">
                 <a href="https://github.com/gabriel-senan">
                     <i class="fa-brands fa-github"></i>
-                </a>
-                <!--<a href="https://www.instagram.com/gabriel.senan/">
-                    <i class="fa-brands fa-instagram"></i>-->
                 </a>
                 <a href="https://www.linkedin.com/in/gabrielsenan/">
                     <i class="fa-brands fa-linkedin"></i>
@@ -232,7 +219,6 @@
                 </a>
             </div>
         </div>
-
     </footer>
     <script src="src/js/script.js"></script>
 </body>
