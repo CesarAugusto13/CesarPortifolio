@@ -1,11 +1,11 @@
-<?php
+<?php 
 $servername = "127.0.0.1:3306";
 $username = "root"; // Substitua pelo seu usuário do MySQL
 $password = "1234"; // Substitua pela sua senha do MySQL
 $dbname = "formulario_db";
 
 /// Cria a conexão
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 
 // Verifica a conexão
 if ($conn->connect_error) {
@@ -36,4 +36,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 $conn->close();
-?>
+?> 
