@@ -97,3 +97,29 @@ footer {
         margin: 5px 0;
     }
 }
+
+
+.messageArea, .nomeArea {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin: 20px 0;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s; /* Animações suaves */
+}
+
+.messageArea:focus , .nomeArea:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+    outline: none;
+}
+.messageArea {
+    height: 150px;
+    resize: none;
+}
