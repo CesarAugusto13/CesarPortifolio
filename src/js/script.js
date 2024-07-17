@@ -1,4 +1,22 @@
 $(document).ready(function() {
+
+    document.getElementById('whatsappForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        // Número do WhatsApp (inclua o código do país e o DDD, sem espaços ou caracteres especiais)
+        const phoneNumber = '5511963610258';
+    
+        // Capturar a mensagem do textarea
+        var name = document.getElementById('name').value;
+        var message = document.getElementById('message').value;
+        var mensagem = name +": "+message
+        // Construir a URL do WhatsApp
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mensagem)}`;
+    
+        // Redirecionar para o WhatsApp
+        window.open(whatsappUrl, '_blank');
+    });
+
     // Função para lidar com o clique no botão móvel
     $('#mobile-btn').on('click', function () {
         $('#mobile-menu').toggleClass('active');

@@ -32,7 +32,7 @@ section {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #0084EF;
+    background-color: #69F097;
     border-radius: 12px;
     padding: 8px 14px;
     font-weight: 600;
@@ -42,7 +42,7 @@ section {
 }
 
 .btn-default:hover {
-    background-color: #0076d7;
+    background-color: #69F097;
 }
 
 .social-media-buttons {
@@ -67,7 +67,7 @@ section {
 
 
 .section-title {
-    color: #0084EF;
+    color:#69F097;
     font-size: 1.563rem;
 }
 

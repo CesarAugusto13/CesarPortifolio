@@ -34,7 +34,7 @@ header {
 .nav-item.active a {
     color: #1e1e1e;
     font-weight: bold;
-    border-bottom: 3px solid #0084EF;
+    border-bottom: 3px solid #69F097;
 }
 
 #mobile-btn {
